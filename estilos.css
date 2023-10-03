@@ -19,7 +19,7 @@
 }
 
 .gris{
-    background-color: gray;
+    background-color: darkgray;
 }
 
 .bordeGris {
@@ -27,7 +27,7 @@
 }
 
 .contornoGris{
-    outline: gray 5px dotted;
+    outline: darkgray 5px dotted;
 }
 
 .textoCentrar{
@@ -46,7 +46,8 @@
 }
 
 .fondoPrincipal{
-    background-image: url("img/fondoLogo.jpeg");
+    /*background-image: url("img/fondoLogo.jpeg");*/
+    background-color: #c2ad70;
     background-position-x: 340px;
 }
 
