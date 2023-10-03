@@ -1,0 +1,253 @@
+.lista-h {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.lista-h li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.imgFloatIzq {
+    float: left;
+    padding-right: 12.5%;
+}
+
+.clear{
+    clear: both;
+}
+
+.gris{
+    background-color: gray;
+}
+
+.bordeGris {
+    border: black 1px solid;
+}
+
+.contornoGris{
+    outline: gray 5px dotted;
+}
+
+.textoCentrar{
+    text-align: center;
+}
+
+.margenY{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.fondoPrincipal{
+    background-image: url("img/fondoLogo.jpeg");
+    background-position-x: 340px;
+}
+
+.botonPrincipal{
+    padding: 10px 20px;
+    border-radius: 20px;
+    border-color: #151515;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+}
+
+.botonPrincipal:hover{
+    transition-duration: 0.4s;
+    background-color: #505050;
+    box-shadow: 1px 1px 1px white;
+}
+
+.botonPrincipal:active{
+    background-color: #a1a1a1;
+}
+
+.botonHeader{
+    display: inline-block;
+
+    padding: 9px 18px;
+    border-radius: 20px;
+    border-color: #151515;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.botonHeader:hover{
+    transition-duration: 0.4s;
+    background-color: #505050;
+    box-shadow: 1px 1px 1px white;
+}
+
+.botonHeader:active{
+    background-color: #a1a1a1;
+}
+
+.barraHeader{
+    background-image: linear-gradient(to left, #b4891b, #885f00);}
+
+.barraFooter{
+    background-image: linear-gradient(to right, #b4891b, #885f00);
+    color: black;
+    font-size: 16px;
+}
+
+.listaFooter{
+    list-style-type: square;
+}
+
+.sinPunto{
+    list-style-type: none;
+}
+
+
+.fondoPaginas{
+    position: relative;
+}
+
+.fondoPaginas::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/logoBocanova.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position-y: -80px;
+    background-position-x: -100px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.fondoP{
+    background-color: #c2ad70;
+}
+
+.pad{
+    padding: 10px;
+}
+
+.botonForm{
+    display: inline-block;
+
+    padding: 5px 15px;
+    border-radius: 20px;
+    border-color: #151515;
+    background-color: black;
+    color: white;
+    box-shadow: 1px 1px 1px black;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.botonForm:hover{
+    transition-duration: 0.4s;
+    background-color: #505050;
+    border-color: #2f2f2f;
+    box-shadow: 1px 1px 1px white;
+}
+
+.botonForm:active{
+    border-color: #dedede;
+    background-color: #a1a1a1;
+}
+
+.selectForm{
+    border: none;
+    padding: 4px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+.inputForm{
+    border: none;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+}
+
+
+.checkForm {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 18px;
+    height: 18px;
+    background-color: black;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+.checkForm:checked:before {
+    content: "X";
+    position: relative;
+    top: -12%;
+    left: 20%;
+    font-size: 18px;
+    color: white;
+}
+
+.fondoPaginasCentrado{
+    position: relative;
+}
+
+.fondoPaginasCentrado::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/logoBocanova.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position-y: -80px;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.rojo{
+    color: red;
+}
+
+.fondoPagVideo{
+    position: relative;
+}
+
+.fondoPagVideo::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/logoBocanova.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position-y: -40px;
+    background-position-x: -280px;
+    opacity: 0.2;
+    z-index: -1;
+}

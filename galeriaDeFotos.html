@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bocanova - Galeria de fotos</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="zerogrid.css">
+    <script src="funciones.js"></script>
+
+</head>
+<body class="fondoP">
+
+<header>
+    <div class="barraHeader">
+        <div class="zerogrid">
+            <div class="row">
+                <a href="index.html"><img alt="logo.jpeg" class="imgFloatIzq margenY" src="img/logoBocanovaReducido.jpeg" width="48" height="48"></a>
+                <div class="col-1-6 ">
+                    <div class="wrap-col textoCentrar">
+                        <button onclick="window.location.href='index.html'" class="botonHeader">Inicio</button>
+                    </div>
+                </div>
+                <div class="col-1-6">
+                    <div class="wrap-col textoCentrar">
+                        <button onclick="window.location.href='quienesSomos.html'" class="botonHeader">Quiénes somos</button>
+                    </div>
+                </div>
+                <div class="col-1-6">
+                    <div class="wrap-col textoCentrar">
+                        <button onclick="window.location.href='dondeEncontrarnos.html'" class="botonHeader">Dónde encontrarnos</button>
+                    </div>
+                </div>
+                <div class="col-1-6">
+                    <div class="wrap-col textoCentrar">
+                        <button onclick="window.location.href='consultas.html'" class="botonHeader">Consultas</button>
+                    </div>
+                </div>
+                <div class="col-1-6">
+                    <div class="wrap-col textoCentrar">
+                        <button onclick="window.location.href='galeriaDeFotos.html'" class="botonHeader">Galería de fotos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+    <section>
+        <br>
+        <div class="zerogrid">
+            <div class="fondoPaginasCentrado bordeGris">
+                <div class="row">
+                    <div class="col-1-4">
+                        <div class="wrap-col textoCentrar">
+                            Elija una galería:
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="wrap-col textoCentrar">
+                            <button class="botonForm" type="button" onclick="insertarImagen('clinica')">Clinica</button>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="wrap-col textoCentrar">
+                            <button class="botonForm" type="button" onclick="insertarImagen('tratamientos')">Tratamientos</button>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="wrap-col textoCentrar">
+                            <button class="botonForm" type="button" onclick="insertarImagen('equipo')">Equipo</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-1-4">
+                        <div class="wrap-col">
+                            <div id="img1">
+                                <p>
+                                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="wrap-col">
+                            <div id="img2">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="wrap-col" >
+                            <div id="img3">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-4">
+                        <div class="wrap-col" >
+                            <div id="img4">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+    </section>
+
+
+
+<footer class="barraFooter">
+    <div class="zerogrid">
+        <div class="row">
+            <div class="col-1-3">
+                <div class="wrap-col">
+                    Contacto:<br>
+                    <ul class="listaFooter">
+                        <li>
+                            Telefono: 351 111-2222
+                        </li>
+                        <li>
+                            Mail: bocanova@gmail.com
+                        </li>
+                        <li class="sinPunto">
+                            <br>
+                            <img alt="whattsapp.png" src="img/whattsapp.png" width="30" height="30">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-3">
+                <div class="wrap-col">
+                    Horario de atencion:
+                    <ul class="listaFooter">
+                        <li>
+                            Lunes a Viernes:<br>
+                            De 8:00hs a 21:00hs
+                        </li>
+                        <li>
+                            Sabados:<br>
+                            De 8:00hs a 10:00hs
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-3">
+                <div class="wrap-col">
+                    Metodos de pago:
+                    <ul class="listaFooter">
+                        <li>
+                            Efectivo
+                        </li>
+                        <li>
+                            Transferencia
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>

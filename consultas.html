@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bocanova - Consultas</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="zerogrid.css">
+    <script src="funciones.js"></script>
+
+
+</head>
+<body class="fondoP">
+
+
+<header>
+    <div class="barraHeader">
+        <div class="zerogrid">
+            <div class="row">
+                <a href="index.html"><img alt="logo.jpeg" class="imgFloatIzq margenY" src="img/logoBocanovaReducido.jpeg" width="48" height="48"></a>
+                <div class="col-1-6 ">
+                    <div class="wrap-col textoCentrar">
+                        <button onclick="window.location.href='index.html'" class="botonHeader">Inicio</button>
+                    </div>
+                </div>
+                <div class="col-1-6">
+                    <div class="wrap-col textoCentrar">
+                        <button onclick="window.location.href='quienesSomos.html'" class="botonHeader">Quiénes somos</button>
+                    </div>
+                </div>
+                <div class="col-1-6">
+                    <div class="wrap-col textoCentrar">
+                        <button onclick="window.location.href='dondeEncontrarnos.html'" class="botonHeader">Dónde encontrarnos</button>
+                    </div>
+                </div>
+                <div class="col-1-6">
+                    <div class="wrap-col textoCentrar">
+                        <button onclick="window.location.href='consultas.html'" class="botonHeader">Consultas</button>
+                    </div>
+                </div>
+                <div class="col-1-6">
+                    <div class="wrap-col textoCentrar">
+                        <button onclick="window.location.href='galeriaDeFotos.html'" class="botonHeader">Galería de fotos</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <section>
+        <br>
+        <div class="zerogrid">
+            <div class="fondoPaginasCentrado">
+                <div class="row">
+                    <div class="col-1-2">
+                        <div class="wrap-col bordeGris pad">
+                            <form>
+                                Quieres saber información sobre: <br>
+                                <span>
+                                <select class="selectForm" id="opcion">
+                                    <option value="obra">Obras sociales</option>
+                                    <option value="urgencias">Urgencias</option>
+                                    <option value="rayos">Equipo de rayos</option>
+                                    <option value="prof">Profesionales</option>
+                                </select>
+                                <br>
+                            </span>
+                                <br>
+                                <button class="botonForm" type="button" onclick="buscarInfo()">Buscar</button>
+                                <br>
+                                <br>
+                                ¿No encontraste la información que buscabas?<br>
+                                Rellena este formulario con tus datos y nos contactaremos contigo brevemente:<br><br>
+                                <span>
+                                Nombre y Apellido: <input class="inputForm" type="text" id="nombre" name="nombre" required placeholder="Su nombre y apellido">
+                            </span>
+                                <span class="rojo">*</span>
+                                <br>
+                                <br>
+                                <span>
+                                Mail: <input class="inputForm" type="email" id="mail" name="mail" required placeholder="sumail@dominio.com">
+                            </span>
+                                <span class="rojo">*</span>
+                                <br>
+                                <br>
+                                <span>
+                                Teléfono: <input class="inputForm" type="text" id="tel" name="te" placeholder="Su numero de teléfono">
+                            </span>
+                                <br>
+                                <br>
+                                <span>
+                                Edad: <input class="inputForm" type="text" id="edad" name="edad" required placeholder="Su edad">
+                            </span>
+                                <span class="rojo">*</span>
+                                <br>
+                                <br>
+                                <span>
+                                Sexo: Hombre <input class="checkForm" type="checkbox" id="hombre"> Mujer <input class="checkForm" type="checkbox" id="mujer"> Otro <input class="checkForm" type="checkbox" id="otro">
+                            </span>
+                                <span class="rojo">*</span>
+                                <br>
+                                <br>
+                                <button class="botonForm" type="button" onclick="formularioContacto()">Enviar datos</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-1-2">
+                        <div class="wrap-col bordeGris pad">
+                            Respuesta: <br><br>
+                            <div id="respuesta">
+
+                            </div>
+                            <br>
+                            <button type="button" onclick="limpiar()" class="botonForm">Limpiar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    <br>
+    </section>
+
+
+
+<footer class="barraFooter">
+    <div class="zerogrid">
+        <div class="row">
+            <div class="col-1-3">
+                <div class="wrap-col">
+                    Contacto:<br>
+                    <ul class="listaFooter">
+                        <li>
+                            Telefono: 351 111-2222
+                        </li>
+                        <li>
+                            Mail: bocanova@gmail.com
+                        </li>
+                        <li class="sinPunto">
+                            <br>
+                            <img src="img/whattsapp.png" width="30" height="30" alt="whattsapp.png">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-3">
+                <div class="wrap-col">
+                    Horario de atencion:
+                    <ul class="listaFooter">
+                        <li>
+                            Lunes a Viernes:<br>
+                            De 8:00hs a 21:00hs
+                        </li>
+                        <li>
+                            Sabados:<br>
+                            De 8:00hs a 10:00hs
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-3">
+                <div class="wrap-col">
+                    Metodos de pago:
+                    <ul class="listaFooter">
+                        <li>
+                            Efectivo
+                        </li>
+                        <li>
+                            Transferencia
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
