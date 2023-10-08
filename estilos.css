@@ -191,6 +191,24 @@
         opacity: 0.2;
         z-index: -1;
     }
+
+
+
+    .fondoPaginasCentrado::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("img/logoNuevo.jpeg");
+        background-repeat: repeat;
+        background-size: cover;
+        background-position-y: -35px;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
 }
 
 @media screen and (max-width: 767px){
@@ -208,6 +226,24 @@
         opacity: 0.2;
         z-index: -1;
     }
+
+
+
+    .fondoPaginasCentrado::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("img/logoNuevo.jpeg");
+        background-repeat: repeat;
+        background-size: cover;
+        background-position-y: -80px;
+        opacity: 0.2;
+        z-index: -1;
+    }
+
 }
 
 
@@ -289,21 +325,6 @@
 
 .fondoPaginasCentrado{
     position: relative;
-}
-
-.fondoPaginasCentrado::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("img/logoNuevo.jpeg");
-    background-repeat: repeat;
-    background-size: cover;
-    background-position-y: -80px;
-    opacity: 0.2;
-    z-index: -1;
 }
 
 .rojo{
