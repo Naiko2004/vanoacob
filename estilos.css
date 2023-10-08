@@ -16,6 +16,11 @@
         max-width: 60%;
         max-height: 60%;
     }
+    .bordeGris {
+        color: white;
+        font-family: cursive;
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -23,6 +28,11 @@
         padding-inline: 45%;
         max-width: 10%;
         max-height: 10%;
+    }
+    .bordeGris {
+        color: white;
+        font-family: cursive;
+        font-size: 4.5vw;
     }
 }
 
@@ -35,11 +45,7 @@
     background-color: darkgray;
 }
 
-.bordeGris {
-    color: white;
-    font-family: cursive;
-    font-size: 30px;
-}
+
 
 
 .contornoGris{
@@ -86,7 +92,7 @@
 
 
 .botonPrincipal:active{
-    background-color: #a1a1a1;
+    background-color: #ecb946;
 }
 
 .botonHeader{
@@ -339,3 +345,19 @@
 {
     font-family: "Liberation Sans";
 }
+
+@media screen and (min-width: 767px) {
+    .LOGO{
+        height: 450px;
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .LOGO
+    {
+        height: 100%;
+        width: 100%;
+    }
+}
+
