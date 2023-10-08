@@ -9,10 +9,23 @@
     margin-right: 10px;
 }
 
-.imgFloatIzq {
-    float: left;
-    padding-right: 12.5%;
+@media screen and (min-width: 767px) {
+    .imgFloatIzq {
+        float: left;
+        padding-right: 12.5%;
+        max-width: 60%;
+        max-height: 60%;
+    }
 }
+
+@media screen and (max-width: 767px){
+    .imgFloatIzq {
+        padding-inline: 45%;
+        max-width: 10%;
+        max-height: 10%;
+    }
+}
+
 
 .clear{
     clear: both;
@@ -23,11 +36,11 @@
 }
 
 .bordeGris {
-    border: black 1px solid;
     color: white;
     font-family: cursive;
     font-size: 30px;
 }
+
 
 .contornoGris{
     outline: darkgray 5px dotted;
@@ -71,6 +84,7 @@
     box-shadow: 1px 1px 1px #211e3f;
 }
 
+
 .botonPrincipal:active{
     background-color: #a1a1a1;
 }
@@ -98,8 +112,37 @@
 }
 
 .botonHeader:active{
-    background-color: #a1a1a1;
+    background-color: #fab824;
 }
+
+
+.botonHeaderActual{
+    display: inline-block;
+
+    padding: 9px 18px;
+    border-radius: 20px;
+    border-color: #8a680a;
+    background-color: #574006;
+    color: #c7c7c7;
+    font-family: "Liberation Sans";
+    box-shadow: 1px 1px 1px #131328;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.botonHeaderActual:hover{
+    transition-duration: 0.4s;
+    background-color: #251a01;
+    box-shadow: 1px 1px 1px #312c5d;
+}
+
+.botonHeaderActual:active{
+    background-color: #8a680a;
+}
+
+
 
 .barraHeader{
     background-image: linear-gradient(to left, #080710, #14142a);
@@ -121,24 +164,46 @@
 
 
 .fondoPaginas{
+    background-color: #07070e;
+    z-index: -2;
     position: relative;
 }
 
-.fondoPaginas::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("img/logoNuevo.jpeg");
-    background-repeat: repeat;
-    background-size: cover;
-    background-position-y: -40px;
-    background-position-x: -100px;
-    opacity: 0.2;
-    z-index: -1;
+@media screen and (min-width: 767px){
+    .fondoPaginas::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("img/logoRedNuevo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 30%;
+        background-position-x: 30%;
+        opacity: 0.2;
+        z-index: -1;
+    }
 }
+
+@media screen and (max-width: 767px){
+    .fondoPaginas::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 15%;
+        width: 75%;
+        height: 100%;
+        background-image: url("img/logoRedNuevo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: -1vw;
+        opacity: 0.2;
+        z-index: -1;
+    }
+}
+
 
 .fondoP{
     background-color: #0d0c1a;
@@ -240,24 +305,35 @@
 }
 
 .fondoPagVideo{
+    background-color: #07070e;
+    z-index: -2;
     position: relative;
 }
 
-.fondoPagVideo::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("img/logoRedNuevo.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 0px;
-    background-position-x: 0px;
-    opacity: 0.2;
-    z-index: -1;
+@media screen and (min-width: 767px){
+
+    .fondoPagVideo::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("img/logoRedNuevo.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 0px;
+        background-position-x: 0px;
+        opacity: 0.2;
+        z-index: -1;
+    }
 }
+
+@media screen and (max-width: 767px){
+    .fondoPagVideo::after{ }
+}
+
+
 
 .fuenteObras
 {
