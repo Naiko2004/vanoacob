@@ -190,3 +190,7 @@ document.getElementById("otro").checked = 0;
 document.getElementById("respuesta").innerHTML = "";
 
 }
+
+
+
+
